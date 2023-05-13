@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script type="text/javascript">
+            function validate()
+            {
+                var email =document.getElementById("uname");
+                var password =document.getElementById("pass");
+                
+
+                if (email.value==""|| password.value=="")
+                {
+                    alert("Credentials can't be blank");
+                    return false;
+                }
+                else{
+                    alert("Welcome,Happy Learning!! ");
+                    true;
+                }
+            }
+
+        </script>
+        <style>
+            body{
+                background-image: url(images/bg19.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100vh;
+            }
+            nav{
+            font-family: 'Trebuchet MS';
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-left: 20px;
+             }
+
+        .logo{
+            color:rgb(0, 0, 0);
+            font-size: 30px;
+            letter-spacing:1px ;
+            padding-top: 10px;
+            padding-left: 20px;
+            float: left;
+        }
+
+        .menu{
+            width:400px;
+            float:left;
+            height: 70px;
+        }
+
+        ul{
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+
+        ul li{
+            list-style: none;
+            margin-left: 65px;
+            margin-top: 27px;
+            font-size: 18px;
+        }
+         
+        ul li a{
+            color:black;
+            font-weight: bold;
+            transition:0.4s ease-in-out;
+        }
+
+         ul li a:hover{
+            color:teal;
+         }
+
+         .search{
+            width: 330px;
+            float:left;
+            margin-left:250px;
+            border-radius: 10px;   
+         }
+
+         .search input{
+            
+            background: transparent;
+            font-size: 15px;
+            font-family: arial;
+            width: 200px;
+            height: 30px;
+            border-radius: 10px; 
+            border-top: 4px solid teal;
+            border-left: 2px solid teal;
+            border-right: 2px solid teal;
+            border-bottom: 2px solid teal  ;
+            background-color: cornsilk;
+         }
+         h1{
+            font-size:300% ;
+            color:black;
+         }
+
+         .button{
+            width: 100px;
+            height:30px;
+            background:transparent;
+            background-color: cornsilk;
+            border-radius: 10px;
+            border-top: 4px solid teal;
+            border-left: 2px solid teal;
+            border-right: 2px solid teal;
+            border-bottom: 2px solid teal  ;
+        }
+
+        .button a{
+            text-decoration: none;
+
+        }
+
+        .button:hover{
+            background-color:bisque;
+            
+        }
+         .content .btn{
+            width:160px;
+            height:30px;
+            background:whitesmoke  ;
+            border-radius: 10px;
+         }
+        .content .btn a{
+            text-decoration: none;
+        }
+        .btn{
+            width:80px;
+            height: 30px;
+            border-radius: 10px;
+            background: transparent;
+            background-color: cornsilk;
+
+        }
+        .btn:hover {
+            background-color:bisque ; 
+        }
+
+        .form{
+            width: 250px;
+            height:380px ;
+            position: absolute;
+            top: 200px;
+            left: 900px;
+            border-radius:10px ;
+            padding: 25px;
+            }
+
+            .form h2{
+                width:18 0px;
+                font-size: 40px;
+                text-align: center;
+                margin-top: 2px;
+                margin-bottom:10px;;
+                margin-left: auto; 
+            }
+
+        .form input{
+            width: 240px;
+            height: 35px;
+            background: transparent;
+            border-top: 4px solid teal;
+            border-left: 2px solid teal;
+            border-right: 2px solid teal;
+            border-bottom: 2px solid teal  ;
+           border-radius: 10px;
+           background-color: cornsilk;
+        }    
+
+        ::placeholder{
+            color: black;
+            font-size: 16px;
+        }
+
+        .btnn{
+            width: 180px;
+            height: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+            padding-left: 10px;  
+            background: transparent;  
+            border-top: 3px solid teal ;
+            border-right: 2px solid teal;
+            border-bottom: 2px solid teal;
+            border-left: 2px solid teal ;
+            background-color: cornsilk;   
+        } 
+
+        .btnn:hover{
+            background-color:bisque;
+        }
+
+        a[href]{
+            color: black;
+            text-decoration: none;
+        }
+
+        #sp{
+            font-size: 20px;
+            border: 1px  rgb(46, 136, 174);  
+        border-radius: 10px;     
+         }
+
+        #sp:hover{
+            background-color: bisque;
+        }
+
+        span{
+            color:teal;
+        }
+
+        .para{
+            font-size: 200%;
+            font-weight: bold;
+        }
+
+        .par{
+            font-size: 150%;
+        }
+
+        .par1{
+            font-size: 150%;
+        }
+        footer{
+            background: transparent;
+        }
+
+        .ifoot{
+            width: 80%;
+            padding: 70px 30px 20px;
+        }
+
+        .icon{
+            display: flex;
+            justify-content: left;
+
+        }
+
+        .icon a{
+            text-decoration: none;
+            padding: 18px;
+            background:transparent;
+            margin: 2px;
+            border-radius: 40%;
+            
+        }
+         
+        .icon a i{
+            font-size:30px ;
+            color: cornsilk;
+           
+        }
+
+        .icon a:hover{
+            background-color: black;
+            transition: 0.5s ;
+        }
+        .copy{
+            background:transparent;
+            padding:10px;
+            text-align: center;
+            width: 90%;
+            margin: 0px;
+        }
+        .copy p{
+            color: cornsilk; 
+        }
+
+       
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <div class="logo"><h2>Crash<span> Course</span></h2></div> 
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html"> HOME </a></li> 
+                        <li><a href="about.html"> ABOUT </a></li>
+                        
+                        <li><a href="contact.html">CONTACT</a> </li>
+                    </ul>   
+                </div>
+                <div class="search"> 
+                    <input  type="text" name="" placeholder="Course Name">
+                    
+                    <button class="button"><a href="new.html"> Search</a></button>
+    
+                </div>        
+            </nav>   
+        <hr><br>
+        <div class="main">
+            <h1> Accelerate Your <br> Career & <span> Upskill yourself</span> </h1>
+            <p class="para">New to Crash Course ? Lucky You! </p>
+            <p class="par"> Join us now and get amazing student offers before it expires. </p>
+            <p class="par1"> Place where learning never ends!!</p>
+            
+        <div class="form">
+            <h2>Login</h2><br><br>
+            <form onsubmit="return validate()" >
+               <input id="uname" type="email" name="email" placeholder="Enter email"><br><br>
+               <input id="pass" type="password" name="" placeholder="Enter password"><br>
+               <button class="btnn" type="submit"><a href="#">LOGIN</a></button>
+            </form>
+            
+               
+              <h3> <p class p2> Haven't signed up?</p></h3>
+              <button class="btn" ><a  href="message.html"> SIGN UP </a></button>
+         </div>     
+
+            
+            <footer>
+                <div class="ifoot">
+                  <div class="icon">
+                    <h2>Reach us </h2>
+                    <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    
+                  </div>
+                  <div class="copy">
+                    <p> &copy; Crash Course 2023;
+                    </p>
+
+                  </div>
+                </div>
+            </footer>
+        
+    </body>
+    </html>

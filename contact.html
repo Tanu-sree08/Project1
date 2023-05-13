@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <script>
+              function validate()
+            {
+                var name =document.getElementById("name");
+                var email =document.getElementById("email");
+                var msg =document.getElementById("msg");
+
+                if (email.value==""|| name.value==""||msg=="")
+                {
+                    alert("Please fill the required fields");
+                    return false;
+                }
+                else{
+                    alert("Thank You! Your message is sent");
+                    true;
+                }
+            }
+        </script>
+        <style>
+        .cimg{
+            float:right;
+            width:100%;
+            border-radius: 100px;
+            background: transparent;
+            height: 35%;
+        }
+        .main{
+            position: absolute;
+            right:10%;
+            width:35%;
+            top: 35%;
+            height: 120%;
+        }
+            
+        body{
+                background-image: url(images/bg19.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100vh;
+            }
+
+        nav{
+            font-family: 'Trebuchet MS';
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        .logo{
+            color:rgb(0, 0, 0);
+            font-size: 30px;
+            letter-spacing:1px ;
+            padding-top: 10px;
+            padding-left: 20px;
+            float: left;
+        }
+    
+        .menu{
+            width:400px;
+            float:left;
+            height: 70px;
+        }
+
+        ul{
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        
+        ul li{
+            list-style: none;
+            margin-left: 65px;
+            margin-top: 27px;
+            font-size: 18px;
+        }
+         
+        ul li a{
+            color:black;
+            font-weight: bold;
+            transition:0.4s ease-in-out;
+        }
+
+         ul li a:hover{
+            color:teal;
+         }
+
+         .search{
+            width: 330px;
+            float:left;
+            margin-left:250px;
+            border-radius: 10px;
+            
+         }
+         .search input{
+            
+            background: transparent;
+            font-size: 15px;
+            font-family: arial;
+            width: 200px;
+            height: 30px;
+            border-radius: 10px; 
+            border-top: 4px solid teal;
+            border-left: 2px solid teal;
+            border-right: 2px solid teal;
+            border-bottom: 2px solid teal  ;
+            background-color: cornsilk;
+         }
+         .button{
+            width: 100px;
+            height:30px;
+            background:transparent;
+            background-color: cornsilk;
+            border-radius: 10px;
+            border-top: 4px solid teal;
+            border-left: 2px solid teal;
+            border-right: 2px solid teal;
+            border-bottom: 2px solid teal  ;
+        }
+
+        .button a{
+            text-decoration: none;
+
+        }
+
+        .button:hover{
+            background-color:bisque;
+            
+        }
+        .index{
+            width: 500px;
+            height: 550px; 
+           padding-left: 10%;
+           padding-top: -1%;
+           
+
+        }  
+        h1{
+            color: teal;
+            
+            padding: 20px 0 ;
+        }
+        .gform{
+            width:400px;
+            margin: 20px 0;
+        }
+        .gform input{
+            width: 80% ;
+            height: 40px;
+            padding: 0 20px;
+            background-color: cornsilk;
+            border-radius: 10px;
+            border-top: 4px solid teal;
+            border-left: 2px solid teal;
+            border-right: 2px solid teal;
+            border-bottom: 2px solid teal  ;
+        }
+        .gform textarea{
+            width: 100%;
+            
+            padding: 20px;
+            background-color: cornsilk;
+            border-radius: 10px;
+            border-top: 4px solid teal;
+            border-left: 2px solid teal;
+            border-right: 2px solid teal;
+            border-bottom: 2px solid teal  ;
+        }
+        .btn{
+            width:80px;
+            height: 30px;
+            border-radius: 10px;
+            background: transparent;
+            background-color: cornsilk;
+
+        }
+        .btn a{
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color:bisque 
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+       
+
+        </style>
+
+
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <div class="logo"><h2>Crash<span> Course</span></h2></div> 
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html"> HOME </a></li> 
+                        <li><a href="about.html"> ABOUT </a></li>
+                       
+                        <li><a href="#">CONTACT</a> </li>
+                    </ul>   
+                </div>
+                <div class="search"> 
+                    <input  type="text" name="" placeholder="Course Name">
+                    
+                    <button class="button"><a href="new.html"> Search</a></button>
+    
+                </div>        
+            </nav>   
+        <hr><br>
+          <div class="main" >
+            
+             <img class="cimg" src="images/img9.jpg">
+          </div>
+         <div class="index">
+            <h1> GET IN TOUCH</h1>
+            <form onsubmit="return validate()" action="">
+                <div class="gform">
+                    <input id="name" type="text" name="Name" placeholder="Enter name"/>
+                </div>
+                    <div class="gform">   
+                    <input id="email" type="email" name="email" placeholder="Enter Email"/>
+                    </div>
+                    <div class="gform">
+                    <textarea id="msg" cols="" rows="7" placeholder="Enter Message"></textarea>
+
+                    </div>
+                <button class="btn" input type="submit"><a href="#">Send</a></button>
+            </form>
+        </div> 
+
+       
+        
+
+    </body>
+    </HTML>

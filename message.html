@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            
+            function validate()
+            {
+                var email =document.getElementById("uname");
+                var password =document.getElementById("pass");
+                var fname =document.getElementById("fname");
+                
+
+
+                if (email.value==""|| password.value==""||fname.value=="")
+                {
+                    alert("Please! Fill the required fields");
+                    return false;
+                }
+                else{
+                    alert("You have successfully registerd ");
+                    true;
+                }
+            }
+
+            
+        </script>
+
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            
+                background-image: url("images/bg19.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100vh;
+                
+            }
+            form{
+                background:transparent;
+                padding: 30px;
+                text-align:center;
+                border-radius: 15px;
+                width: 350px;
+            }
+            form input{
+                display: block;
+                background: none;
+                margin: 30px auto;
+                padding: 8px;
+                text-align: center;
+                border-top:2px solid teal ;
+                border-left:1px solid teal ;
+                border-right:1px solid teal ;
+                border-bottom:2px solid teal ;
+                background-color: cornsilk;
+                outline: none;
+                width:220px;
+                font-size: 22px;
+                border-radius: 10px;
+            }
+            .btn{
+                width: 100px;
+                height: 30px;
+                color: grey;
+                border-radius: 10px;
+                background: transparent;
+                border-top:3px solid teal ;
+                border-left:2px solid teal ;
+                border-right:2px solid teal ;
+                border-bottom:3px solid teal ;
+                background-color: burlywood;
+
+            }
+            ::placeholder{
+                color: black;
+            }
+
+            .btn a{
+                text-decoration: none;
+                color: black;
+            }
+
+            .btn:hover {
+                background-color: bisque;
+
+            }
+            .logo{
+            color:rgb(0, 0, 0);
+            font-size: 30px;
+            letter-spacing:1px ;
+            padding-top: 10px;
+            padding-left: 20px;
+            float: left;
+            }
+
+            span{
+                color: teal;
+            }
+
+            a[href]{
+                color: black;
+                text-decoration: none;
+            }
+            .copy{
+            background:transparent;
+            padding:10px;
+            text-align: center;
+            width: 121%;
+            margin: 0px;
+        }
+        .copy p{
+            color: cornsilk; 
+        }
+            
+
+
+
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+        
+        <form onsubmit="return validate()">
+            
+            <h1> Register</h1>
+            <input id="fname"
+            type="text"
+            name="firstname"
+            placeholder="First Name"/>
+
+            <input id="lname"
+            type="text"
+            name="lastname"
+            placeholder="Last Name"/>
+
+            <input id="uname"
+            type="email"
+            name="email"
+            placeholder="Enter Email"/>
+
+            <input id="pass"
+            type="password"
+            name="password"
+            placeholder="Enter Password"/>
+             
+            <input id="cpass"
+            type="password"
+            name="cpassword"
+            placeholder="Confirm Password"/>
+
+            <input id="contact"
+            type="text"
+            name="phone"
+            placeholder="Enter Phone No."/>
+
+            <button class="btn" type="submit"><a href="#">REGISTER</a> </button>
+    
+    </form>
+   
+    
+
+
+
+
+
+
+    </body>    
+</html>
